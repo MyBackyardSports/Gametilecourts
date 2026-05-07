@@ -1,0 +1,63 @@
+import { Header } from "@/components/Header";
+import { PromoBanner } from "@/components/PromoBanner";
+import { Hero } from "@/components/Hero";
+import { TrustBar } from "@/components/TrustBar";
+import { StatsBar } from "@/components/StatsBar";
+import { IntentSplit } from "@/components/IntentSplit";
+import { ResidentialCommercialSplit } from "@/components/ResidentialCommercialSplit";
+import { MBSAdvantage } from "@/components/MBSAdvantage";
+import { TileCollections } from "@/components/TileCollections";
+import { CourtConfigurator } from "@/components/CourtConfigurator";
+import { Process } from "@/components/Process";
+import { LockerRoom } from "@/components/LockerRoom";
+import { Just1Mission } from "@/components/Just1Mission";
+import { Testimonials } from "@/components/Testimonials";
+import { GoogleReviews } from "@/components/GoogleReviews";
+import { BeforeAfter } from "@/components/BeforeAfter";
+import { FAQ } from "@/components/FAQ";
+import { CTA } from "@/components/CTA";
+import { CTAPopup } from "@/components/CTAPopup";
+import { Footer } from "@/components/Footer";
+import { FeaturedIn } from "@/components/FeaturedIn";
+import { HomePageSEO } from "@/components/SEO";
+import { CourtCostEstimator } from "@/components/CourtCostEstimator";
+import { HomepageFAQ } from "@/components/HomepageFAQ";
+import { NewsletterCapture } from "@/components/NewsletterCapture";
+import { GTCFitComparison } from "@/components/GTCFitComparison";
+
+const Index = () => {
+  return (
+    <div className="min-h-screen">
+      <HomePageSEO />
+      <Header />
+      <main id="main-content">
+        <Hero />
+        <PromoBanner />
+        <StatsBar />
+        <TrustBar />
+        <ResidentialCommercialSplit />
+        <GoogleReviews />
+        <IntentSplit />
+        <MBSAdvantage />
+        <GTCFitComparison />
+        <TileCollections />
+        <CourtCostEstimator variant="homepage" />
+        <CourtConfigurator />
+        <Process />
+        <LockerRoom />
+        <Just1Mission />
+        <BeforeAfter />
+        <Testimonials />
+        <HomepageFAQ />
+        <NewsletterCapture source="homepage" />
+        <FAQ />
+        <CTA />
+      </main>
+      <FeaturedIn />
+      <Footer />
+      <CTAPopup />
+    </div>
+  );
+};
+
+export default Index;
